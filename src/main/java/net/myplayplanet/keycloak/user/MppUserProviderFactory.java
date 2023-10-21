@@ -13,7 +13,7 @@ import java.util.List;
 
 public class MppUserProviderFactory implements UserStorageProviderFactory<MppUserProvider> {
 
-    public static final String PROVIDER_ID = "mpp-user-provider";
+    public static final String PROVIDER_ID = "mpp-player";
 
     @Override
     public MppUserProvider create(KeycloakSession keycloakSession, ComponentModel componentModel) {
@@ -27,7 +27,7 @@ public class MppUserProviderFactory implements UserStorageProviderFactory<MppUse
 
     @Override
     public String getHelpText() {
-        return "MPP User Provider";
+        return "MPP Player Provider";
     }
 
     @Override
