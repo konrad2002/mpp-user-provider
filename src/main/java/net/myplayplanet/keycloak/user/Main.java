@@ -16,7 +16,7 @@ public class Main {
             @Override
             protected void configure() {
                 super.configure();
-                bind(String.class).annotatedWith(Names.named("playerServiceBaseUrl")).toInstance("http://localhost:8082/");
+                bind(String.class).annotatedWith(Names.named("playerServiceBaseUrl")).toInstance("http://localhost:8083/");
                 bind(String.class).annotatedWith(Names.named("banServiceBaseUrl")).toInstance("http://ban-service:8080/");
 
             }
